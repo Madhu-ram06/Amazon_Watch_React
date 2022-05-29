@@ -1,0 +1,150 @@
+.Topbar{
+  background-color: #282c34;
+   text-align: center;
+}
+
+.maincontainer{
+  width:100%;
+  display:flex;
+  padding: 4% 12%;
+  margin-top:40px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.productpic{
+  width:100%;
+  position: relative;
+  
+  
+}
+.productpic > img{
+  width:100%;
+  
+}
+.productdesc{
+  width:100%;
+  
+}
+.productdesc > h1{
+  font-size:46px;
+  margin-top:-50px;
+  
+}
+.watchbutton{
+  width:60px;
+  height:60px;
+  border: 1px solid #DCDCDC;
+  padding:8px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-right:10px;
+  cursor:pointer;
+
+}
+.watchbutton>img{
+  width:55px;
+  height:55px;
+
+}
+.heartbutton{
+  padding:12px;
+  width:100px;
+  background-color: rgb(222, 210, 210);
+  border: none;
+  border-radius: 6px;
+  font-family:Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+.clickedheartbutton{
+  padding:12px;
+  width:100px;
+  background-color: grey;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-family:Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+.timebutton{
+  padding:12px;
+  width:100px;
+  background-color: rgb(222, 210, 210);
+  border: none;
+  border-radius: 6px;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-right: 25px;
+  cursor: pointer;
+}
+.clickedtimebutton{
+  padding:12px;
+  width:100px;
+  background-color: grey;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-right: 25px;
+  cursor: pointer;
+}
+.Selectedwatchbutton{
+  border:1px solid teal;
+}
+
+.buy{
+  background-color: teal;
+  color: white;
+  width:130px;
+  height: 55px;
+  padding:4px;
+  margin-top: 30px;
+  border:none;
+  border-bottom: 1px;
+}
+
+.textDisplayWatch{
+  position: absolute;
+  left:50%;
+  top:40%;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  font-size: 40px;
+  color: white;
+}
+.textDisplayWatch>i{
+  color:white;
+}
+.heartbeat{
+  position: absolute;
+  left:50%;
+  top:52%;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  font-size: 50px;
+
+  
+  
+}
+.heartbeat>i{
+  color: red;
+  animation: beat 1s infinite;
+  }
+.heartbeat >p{
+  color: white;
+  font-size: 32px;
+}
+@keyframes beat{
+  0%{
+    transform: scale(1,1);
+  }
+
+  50%{
+    transform: scale(1.2,1.2);
+  }
+  100%{
+    transform: scale(1,1);
+  }
+}
+.preheartbeat{
+  visibility: hidden;
+}

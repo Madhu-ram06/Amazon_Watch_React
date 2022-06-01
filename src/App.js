@@ -8,9 +8,9 @@ function App() {
   const title="FitBit 19 - The Smartest Watch";
   const description= 'Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor.';
  // eslint-disable-next-line
-  {/* const time= new Date().getHours()> 9 ? new Date().getHours() : '0'+ new Date().getHours();
+   const time= new Date().getHours()> 9 ? new Date().getHours() : '0'+ new Date().getHours();
  const mins= new Date().getMinutes()> 9 ? new Date().getMinutes() : '0'+ new Date().getMinutes();
-const finaltime=`${time}:${mins}`;*/}
+const finaltime=`${time}:${mins}`;
   var img='https://imgur.com/iOeUBV7.png';
  
 
@@ -27,45 +27,39 @@ const finaltime=`${time}:${mins}`;*/}
  if(text==="purple")
  img='https://imgur.com/xSIK4M8.png';
   
- //var[number,setstyle]=useState(0)
+ var[number,setstyle]=useState(0)
  var[number1,setheart]=useState(0)
- //this.setstyle=this.setstyle.bind(this)
+
  
- var heartbutton="heartbutton"
- //var timebutton="timebutton"
+
  var heartbeat="preheartbeat"
- // var showtime=""
- //if(number===1 ){
- //timebutton="clickedtimebutton"
- //showtime=finaltime
- //number1=0
- //number=0
+ var showtime=""
+ if(number===1 )
+  showtime=finaltime
  
-// }
+
 
 
  if(number1===1)
- {
-   heartbeat="heartbeat"
-   heartbutton="clickedheartbutton"
-  // number=0
-   number1=0
+ heartbeat="heartbeat"
    
+  
+  
    
-  }
   
   
-
   
+  const handleClickHeart=()=>{
+setheart(1);
+setstyle(0);
+};
+const handleClickTime=()=>{
   
-
-
- 
-
- 
+  setstyle(1);
+  setheart(0);
+  };
   
-    
-  return (
+   return (
     
        
     <div className="App">
@@ -80,9 +74,9 @@ const finaltime=`${time}:${mins}`;*/}
        
           <img src={img}  alt="Product review"/>
           
-         {/* <div className="textDisplayWatch">
+          <div className="textDisplayWatch">
           {showtime}
-  </div>*/}
+        </div>
           <div className={heartbeat}>
           <i class="fa-solid fa-heart-pulse"></i>
           <p>78</p>
@@ -104,8 +98,8 @@ const finaltime=`${time}:${mins}`;*/}
           <div id="purple" className="watchbutton" onClick={()=>changeColor("purple")}> <img src='https://imgur.com/xSIK4M8.png' alt="watch button"/></div>
 
           <h3 style={{marginTop:"30px"}}> Features</h3>
-          {/*<button  className={timebutton}  onClick={()=>setstyle(1)} > Time</button>*/}
-          <button className={heartbutton} onClick={()=>setheart(1)}>Heart Rate</button>
+          <button  className={number?"clickedtimebutton":"timebutton"}  onClick={handleClickTime} > Time</button>
+          <button className={number1?"clickedheartbutton":"heartbutton"} onClick={handleClickHeart}>Heart Rate</button>
           <br/>
           <button className="buy">Buy Now</button>
 

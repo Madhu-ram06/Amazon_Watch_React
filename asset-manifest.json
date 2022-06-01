@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Amazon_Watch_React/static/css/main.2b936d3c.css",
-    "main.js": "/Amazon_Watch_React/static/js/main.8976675c.js",
+    "main.js": "/Amazon_Watch_React/static/js/main.77a4ca6e.js",
     "static/js/787.89ce34df.chunk.js": "/Amazon_Watch_React/static/js/787.89ce34df.chunk.js",
     "index.html": "/Amazon_Watch_React/index.html",
     "main.2b936d3c.css.map": "/Amazon_Watch_React/static/css/main.2b936d3c.css.map",
-    "main.8976675c.js.map": "/Amazon_Watch_React/static/js/main.8976675c.js.map",
+    "main.77a4ca6e.js.map": "/Amazon_Watch_React/static/js/main.77a4ca6e.js.map",
     "787.89ce34df.chunk.js.map": "/Amazon_Watch_React/static/js/787.89ce34df.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2b936d3c.css",
-    "static/js/main.8976675c.js"
+    "static/js/main.77a4ca6e.js"
   ]
 }

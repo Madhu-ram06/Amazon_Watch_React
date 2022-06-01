@@ -21,6 +21,7 @@
 .productpic > img{
   width:100%;
   
+  
 }
 .productdesc{
   width:100%;
@@ -147,4 +148,5 @@
 }
 .preheartbeat{
   visibility: hidden;
+  
 }
